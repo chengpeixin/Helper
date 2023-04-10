@@ -1,3 +1,5 @@
 export * from "./helpers/browser"
 export * from "./helpers/number"
 export * from "./helpers/verification"
+export * from "./helpers/hashTree"
+export * from "./helpers/file"
