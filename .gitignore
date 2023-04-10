@@ -1,0 +1,27 @@
+# Compiled output
+dist/
+build/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Output of 'npm pack'
+*.tgz
+
+# Typescript-specific
+*.tsbuildinfo
