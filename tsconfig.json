@@ -2,13 +2,15 @@
   "compilerOptions": {
     "target": "es2018", // 目标代码的 ECMAScript 版本
     "module": "ESNext", // 输出模块的规范
-    "lib": ["es2018", "dom"], // 引用的内置类型定义库，这里包含了 ES2018 和 DOM
+    "lib": ["es2018", "dom","es2020"], // 引用的内置类型定义库，这里包含了 ES2018 和 DOM
     "declaration": true, // 是否生成 .d.ts 类型声明文件
     "declarationDir": "./dist/types", // 生成的类型声明文件存放的目录
     "outDir": "./dist", // 编译输出目录
     "strict": true, // 启用所有严格类型检查选项
     "esModuleInterop": true, // 启用对 CommonJS 模块的 ES 模块兼容性支持
-    "forceConsistentCasingInFileNames": true // 强制使用一致的大小写文件名
+    "forceConsistentCasingInFileNames": true, // 强制使用一致的大小写文件名
+    "moduleResolution": "node"
+
   },
   "include": ["src/**/*"], // 源代码目录
   "exclude": ["node_modules", "dist"] // 排除的目录，通常为 node_modules 和 dist
