@@ -44,6 +44,28 @@ console.log(validateIDCardNumber('110101199003077656')); // true
 
 返回值：校验结果，如果身份证号格式正确，返回t`rue`，否则返回`false`。
 
+---
+函数名称：removeProps
+
+函数描述：移除对象中指定的属性，并返回这些属性的键值对
+
+函数签名：function removeProps(obj: object, props: string[]): {[key: string]: any}
+
+参数：
+
+obj: 要移除属性的对象
+props: 要移除的属性名列表
+返回值：包含被删除的属性及其对应值的对象
+
+使用示例：
+```typescript
+const obj = { name: "join", age: 18, gender: "male" };
+const deletedProps = removeProps(obj, ["name", "gender"]);
+
+console.log(obj); // { age: 18 }
+console.log(deletedProps); // { name: "xpc", gender: "male" }
+
+```
 
 ## 贡献
 欢迎提出建议和意见，也欢迎提交PR。
